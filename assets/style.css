@@ -1,0 +1,71 @@
+body{
+    font-size: 16px;
+    background-color: rgba(41, 147, 233, 0.596);
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+}
+
+.jumbotron {
+    flex: auto;
+    box-sizing: border-box;
+    text-align: center;
+     background-color: rgba(22, 129, 216, 0.596);
+
+}
+.lead {
+    font-size: 18px;
+    font-weight: 300;
+
+}
+
+textarea{
+    background: transparent;
+    border: none;
+    resize: none;
+    color: white;
+    border-left:2px black;
+    padding: 10px;
+}
+
+.description{
+    white-space: pre-wrap;
+}
+.time-block{
+    text-align: center;
+    border-radius: 15px;
+
+}
+.row{
+    white-space: pre-wrap;
+    height: 80px;
+    border-top: 2px white ;
+}
+.hour {
+    background-color: #ffffff;
+    color:#0000;
+    border-top: 2px solid black
+}
+
+.past {
+    background-color: rgb(61, 2, 2);
+    color: azure;
+}
+
+.present{
+    background-color:rgba(8, 75, 161, 0.719) ;
+    color: azure;
+}
+
+.future {
+    background-color: rgba(173, 182, 175, 0.877);
+    color: azure;
+}
+.saveBtn {
+    border-left: 2px black;
+    border-top-right-radius:20px;
+    border-bottom-left-radius: 20px;
+    background-color: grey fixed;
+}
+.saveBtn :hover {
+    font-size: 24px;
+    transition: all .3s ease-in-out; 
+}
