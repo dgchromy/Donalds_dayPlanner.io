@@ -1,76 +1,71 @@
-body{
-    font-size: 16px;
-    background-color: rgba(41, 147, 233, 0.596);
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+body {
+  font-size: 16px;
+  background-color: rgba(41, 147, 233, 0.596);
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  padding: 10px;
 }
 
 .jumbotron {
-    flex: auto;
-    box-sizing: border-box;
-    text-align: center;
-     background-color: rgba(22, 129, 216, 0.596);
-
+  flex: auto;
+  box-sizing: border-box;
+  text-align: center;
+  background-color: rgba(22, 129, 216, 0.596);
 }
 .lead {
-    font-size: 18px;
-    font-weight: 300;
-
+  font-size: 24px;
+  font-weight: 300;
 }
-.textbox{
-    white-space: pre-wrap;
-   
+.textbox {
+  white-space: pre-wrap;
 }
-
 
 .saveBtn {
-    border-left: 2px black;
-    border-top-right-radius:20px;
-    border-bottom-left-radius: 20px;
-    background-color: grey fixed;
+  border-left: 2px black;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  background-color: grey fixed;
 }
 .saveBtn :hover {
-    font-size: 24px;
-    transition: all .3s ease-in-out; 
+  font-size: 24px;
+  transition: all 0.3s ease-in-out;
 }
-  
-.textarea{
-    background: transparent;
-    /* resize: none; */
-    color: #000000;
-    border-left: 1px solid black;
-    padding: 10px;
-  }
-  
-.time-block{
-    text-align: center;
-    border-radius: 20px;
-    width: 75%;
-  }
-  
-  .row {
-    white-space: pre-wrap;
-    height: 80px;
-    border-top: 1px solid white;;
-    text-align: center;
-  }
-  
-  .hour {
-    background-color:grey;
-    color: #000000;
-    border: 2px solid rgba(179, 47, 47, 0.767 );
-    text-align: center;
-    
-    width: 100px;
-    padding: 10px;
-  }
-  
-  .saveBtn {
-    border-left: 1px solid black;
-    background-color: rgba(179, 47, 47, 0.767);
-    color: white;
-  }
-  
-  .saveBtn i:hover {
-    font-size: 18px;
-    transition: all .5s ease-in-out;
-  } 
+
+.textarea {
+  background: transparent;
+  color: #000000;
+  border-left: 1px solid black;
+}
+
+.time-block {
+  text-align: center;
+  border-radius: 20px;
+  width: 75%;
+}
+
+.row {
+  white-space: pre-wrap;
+  height: 80px;
+  border-top: 1px solid white;
+  text-align: center;
+}
+
+.hour {
+  background-color: grey;
+  color: #000000;
+  border: 2px solid rgba(179, 47, 47, 0.767);
+  text-align: center;
+  width: 100px;
+  padding: 10px;
+}
+
+.saveBtn {
+  border-left: 1px solid black;
+  background-color: rgba(179, 47, 47, 0.767);
+  color: white;
+}
+
+.saveBtn i:hover {
+  font-size: 18px;
+  transition: all 0.5s ease-in-out;
+}
