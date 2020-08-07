@@ -2,20 +2,20 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta nAme="viewport" content="width=device-width, initial-scale=1.0">
     <!-- bootstrap link -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 
     <link rel="stylesheet" href="assets/style.css">
 
-    
+
     <title> planning your day </title>
 
 </head>
 <body>
 <header class="jumbotron">
     <h1 class="display-4">9 to 5 Day planner!</h1>
-    <p class="lead">Start planning your day to optimize your production!</p>
+    <p id="upToDate" class="lead">Start planning your day to optimize your production!</p>
   <hr class="my-4">
 </div>
 </header>
@@ -25,9 +25,9 @@
     <!-- time blocks -->
     <div class="row time-block">
     <div class="col-2 col-md-1 hour">
-        9AM
+        9Am
     </div>
-   <div class="col-8 col-md-10 hour textbox" contenteditable="true" id="9Am block">
+   <div class="col-8 col-md-10 hour textbox" contenteditable="true" id="9AmBlock">
    </div>
    <div class="col-2 col-md-1 saveBtn 9AmButton">
        <i class="far fa-save">save</i>
@@ -36,9 +36,9 @@
 
    <div class="row time-block">
     <div class="col-2 col-md-1 hour">
-        10AM
+        10Am
     </div>
-   <div class="col-8 col-md-10 hour textbox" contenteditable="true" id="10Am block">
+   <div class="col-8 col-md-10 hour textbox" contenteditable="true" id="10AmBlock">
    </div>
    <div class="col-2 col-md-1 saveBtn 10AmButton">
        <i class="far fa-save">save</i>
@@ -47,9 +47,9 @@
 
    <div class="row time-block">
     <div class="col-2 col-md-1 hour">
-        11AM
+        11Am
     </div>
-   <div class="col-8 col-md-10 hour textbox" contenteditable="true" id="11Am block">
+   <div class="col-8 col-md-10 hour textbox" contenteditable="true" id="11AmBlock">
    </div>
    <div class="col-2 col-md-1 saveBtn 11AmButton">
        <i class="far fa-save">save</i>
@@ -58,9 +58,9 @@
 
    <div class="row time-block">
     <div class="col-2 col-md-1 hour">
-        12PM
+        12Pm
     </div>
-   <div class="col-8 col-md-10 hour textbox" contenteditable="true" id="12Pm block">
+   <div class="col-8 col-md-10 hour textbox" contenteditable="true" id="12PmBlock">
    </div>
    <div class="col-2 col-md-1 saveBtn 12PmButton">
        <i class="far fa-save">save</i>
@@ -69,9 +69,9 @@
 
    <div class="row time-block">
     <div class="col-2 col-md-1 hour">
-     1PM
+     1Pm
     </div>
-   <div class="col-8 col-md-10 hour textbox" contenteditable="true" id="1Pm block">
+   <div class="col-8 col-md-10 hour textbox" contenteditable="true" id="1PmBlock">
    </div>
    <div class="col-2 col-md-1 saveBtn 1PmButton">
        <i class="far fa-save">save</i>
@@ -82,7 +82,7 @@
     <div class="col-2 col-md-1 hour">
        2Pm
     </div>
-   <div class="col-8 col-md-10 hour textbox" contenteditable="true" id="2Pm block">
+   <div class="col-8 col-md-10 hour textbox" contenteditable="true" id="2PmBlock">
    </div>
    <div class="col-2 col-md-1 saveBtn 2PmButton">
        <i class="far fa-save">save</i>
@@ -91,9 +91,9 @@
 
    <div class="row time-block">
     <div class="col-2 col-md-1 hour">
-       3PM
+       3Pm
     </div>
-   <div class="col-8 col-md-10 hour textbox" contenteditable="true" id="3Pm block">
+   <div class="col-8 col-md-10 hour textbox" contenteditable="true" id="3PmBlock">
    </div>
    <div class="col-2 col-md-1 saveBtn 3PmButton">
        <i class="far fa-save">save</i>
@@ -104,7 +104,7 @@
     <div class="col-2 col-md-1 hour">
        4Pm
     </div>
-   <div class="col-8 col-md-10 hour textbox" contenteditable="true" id="4Pm block">
+   <div class="col-8 col-md-10 hour textbox" contenteditable="true" id="4PmBlock">
    </div>
    <div class="col-2 col-md-1 saveBtn 4PmButton">
        <i class="far fa-save">save</i>
@@ -113,9 +113,9 @@
 
    <div class="row time-block">
     <div class="col-2 col-md-1 hour">
-        5PM
+        5Pm
     </div>
-   <div class="col-8 col-md-10 hour textbox" contenteditable="true" id="5Pm block">
+   <div class="col-8 col-md-10 hour textbox" contenteditable="true" id="5PmBlock">
    </div>
    <div class="col-2 col-md-1 saveBtn 5PmButton">
        <i class="far fa-save">save</i>
@@ -127,9 +127,10 @@
     
    
 <!-- bootstrap java script and jquery -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
     <!-- my javascript file-->
     <script src="assets/planner.js"></script>
+    
 </body>
 </html>
