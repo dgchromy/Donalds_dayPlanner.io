@@ -11,7 +11,9 @@ body {
   box-sizing: border-box;
   text-align: center;
   background-color: rgba(22, 129, 216, 0.596);
+  
 }
+
 .lead {
   font-size: 24px;
   font-weight: 300;
@@ -68,4 +70,10 @@ body {
 .saveBtn i:hover {
   font-size: 18px;
   transition: all 0.5s ease-in-out;
+}
+
+.container {
+box-sizing: border-box;
+float: none;
+margin: auto;
 }

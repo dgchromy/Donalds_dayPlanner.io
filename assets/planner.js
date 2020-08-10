@@ -12,7 +12,7 @@ var today2Pm = (moment("14:00", "HH:mm")).toString();
 var today3Pm = (moment("15:00", "HH:mm")).toString();
 var today4Pm = (moment("16:00", "HH:mm")).toString();
 var today5Pm = (moment("17:00", "HH:mm")).toString();
-
+var today6Pm = (moment("18:00", "HH:mm")).toString();
 
 // time blocks if and else statements//
 if (now < today9Am)
@@ -25,7 +25,7 @@ else if ((now >= today9Am) && (now < today10Am))
 }
 else if (now >= today10Am)
 {
-    ("#9AmBlock").addClass("past");
+    $("#9AmBlock").addClass("past");
 };
 
 
@@ -39,7 +39,7 @@ else if ((now >= today10Am) && (now < today11Am))
 }
 else if (now >= today11Am)
 {
-    ("#10AmBlock").addClass("past");
+    $("#10AmBlock").addClass("past");
 
 };
 
@@ -47,13 +47,13 @@ if (now < today11Am)
 {
     $("#11AmBlock").addClass("future");
 }
-else if ((now >= today11Am) && (now < today12Am))
+else if ((now >= today11Am) && (now < today12Pm))
 {
     $("#11AmBlock").addClass("present");
 }
 else if (now >= today12Pm)
 {
-    ("#11AmBlock").addClass("past");
+    $("#11AmBlock").addClass("past");
 
 };
 
@@ -67,7 +67,7 @@ else if ((now >= today12Pm) && (now < today1Pm))
 }
 else if (now >= today1Pm)
 {
-    ("#12PmBlock").addClass("past");
+    $("#12PmBlock").addClass("past");
 
 };
 
@@ -81,7 +81,7 @@ else if ((now >= today1Pm) && (now < today2Pm))
 }
 else if (now >= today11Am)
 {
-    ("#1PmBlock").addClass("past");
+    $("#1PmBlock").addClass("past");
 
 };
 
@@ -95,7 +95,7 @@ else if ((now >= today2Pm) && (now < today3Pm))
 }
 else if (now >= today11Am)
 {
-    ("#2PmBlock").addClass("past");
+    $("#2PmBlock").addClass("past");
 
 };
 
@@ -109,7 +109,7 @@ else if ((now >= today3Pm) && (now < today4Pm))
 }
 else if (now >= today11Am)
 {
-    ("#3PmBlock").addClass("past");
+    $("#3PmBlock").addClass("past");
 
 };
 
@@ -123,7 +123,7 @@ else if ((now >= today4Pm) && (now < today5Pm))
 }
 else if (now >= today11Am)
 {
-    ("#4PmBlock").addClass("past");
+    $("#4PmBlock").addClass("past");
 
 };
 
@@ -135,9 +135,9 @@ else if ((now >= today5Pm) && (now < today6Pm))
 {
     $("#5PmBlock").addClass("present");
 }
-else if (now >= today11Am)
+else if (now >= today6Pm)
 {
-    ("#5PmBlock").addClass("past");
+    $("#5PmBlock").addClass("past");
 
 };
 
@@ -146,7 +146,7 @@ else if (now >= today11Am)
 var eventRetrieved9Am = localStorage.getItem("9AmEventAdded");
 $("#9AmBlock").text(eventRetrieved9Am);
 
-$(".Button9Am").on("click", function (event) {
+$(".9AmButton").on("click", function (event) {
 
     var eventAdded9Am = $("#9AmBlock").text();
     localStorage.setItem("9AmEventAdded", (eventAdded9Am));
@@ -156,7 +156,7 @@ $(".Button9Am").on("click", function (event) {
 var eventRetrieved10Am = localStorage.getItem("10AmEventAdded");
 $("#10AmBlock").text(eventRetrieved10Am);
 
-$(".Button10Am").on("click", function (event) {
+$(".B10AmButton").on("click", function (event) {
 
     var eventAdded10Am = $("#10AmBlock").text();
     localStorage.setItem("10AmEventAdded", (eventAdded10Am));
@@ -166,7 +166,7 @@ $(".Button10Am").on("click", function (event) {
 var eventRetrieved11Am = localStorage.getItem("11AmEventAdded");
 $("#11AmBlock").text(eventRetrieved11Am);
 
-$(".Button11Am").on("click", function (event) {
+$(".11AmButton").on("click", function (event) {
 
     var eventAdded11Am = $("#11AmBlock").text();
     localStorage.setItem("11AmEventAdded", (eventAdded11Am));
@@ -176,7 +176,7 @@ $(".Button11Am").on("click", function (event) {
 var eventRetrieved12Pm = localStorage.getItem("12PmEventAdded");
 $("#12PmBlock").text(eventRetrieved12Pm);
 
-$(".Button12Pm").on("click", function (event) {
+$(".12PmButton").on("click", function (event) {
 
     var eventAdded12Pm = $("#12PmBlock").text();
     localStorage.setItem("12PmEventAdded", (eventAdded12Pm));
@@ -186,7 +186,7 @@ $(".Button12Pm").on("click", function (event) {
 var eventRetrieved1Pm = localStorage.getItem("1PmEventAdded");
 $("#1PmBlock").text(eventRetrieved1Pm);
 
-$(".Button1Pm").on("click", function (event) {
+$(".1PmButton").on("click", function (event) {
 
     var eventAdded1Pm = $("#1PmBlock").text();
     localStorage.setItem("1PmEventAdded", (eventAdded1Pm));
@@ -196,7 +196,7 @@ $(".Button1Pm").on("click", function (event) {
 var eventRetrieved2Pm = localStorage.getItem("2PmEventAdded");
 $("#2PmBlock").text(eventRetrieved2Pm);
 
-$(".Button2Pm").on("click", function (event) {
+$(".2PmButton").on("click", function (event) {
 
     var eventAdded2Pm = $("#2PmBlock").text();
     localStorage.setItem("2PmEventAdded", (eventAdded2Pm));
@@ -206,7 +206,7 @@ $(".Button2Pm").on("click", function (event) {
 var eventRetrieved3Pm = localStorage.getItem("3PmEventAdded");
 $("#3PmBlock").text(eventRetrieved3Pm);
 
-$(".Button3Pm").on("click", function (event) {
+$(".3PmButton").on("click", function (event) {
 
     var eventAdded3Pm = $("#3PmBlock").text();
     localStorage.setItem("3PmEventAdded", (eventAdded3Pm));
@@ -215,7 +215,7 @@ $(".Button3Pm").on("click", function (event) {
 var eventRetrieved4Pm = localStorage.getItem("4PmEventAdded");
 $("#4PmBlock").text(eventRetrieved4Pm);
 
-$(".Button4Pm").on("click", function (event) {
+$(".4PmButton").on("click", function (event) {
 
     var eventAdded4Pm = $("#4PmBlock").text();
     localStorage.setItem("4PmEventAdded", (eventAdded4Pm));
@@ -225,7 +225,7 @@ $(".Button4Pm").on("click", function (event) {
 var eventRetrieved5Pm = localStorage.getItem("5PmEventAdded");
 $("#5PmBlock").text(eventRetrieved5Pm);
 
-$(".Button5Pm").on("click", function (event) {
+$(".5PmButton").on("click", function (event) {
 
     var eventAdded5Pm = $("#5PmBlock").text();
     localStorage.setItem("5PmEventAdded", (eventAdded5Pm));
