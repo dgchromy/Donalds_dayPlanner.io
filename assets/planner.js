@@ -156,7 +156,7 @@ $(".9AmButton").on("click", function (event) {
 var eventRetrieved10Am = localStorage.getItem("10AmEventAdded");
 $("#10AmBlock").text(eventRetrieved10Am);
 
-$(".B10AmButton").on("click", function (event) {
+$(".10AmButton").on("click", function (event) {
 
     var eventAdded10Am = $("#10AmBlock").text();
     localStorage.setItem("10AmEventAdded", (eventAdded10Am));
